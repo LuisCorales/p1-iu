@@ -123,16 +123,54 @@ form h3 {
 }
 
 form p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 form label {
     font-weight: bold;
 }
 
+.b {
+    font-weight: bold;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.childs {
+    display: flex;
+    gap: 62px;
+}
+
+.ages {
+    display: grid;
+    grid-template-columns: 70px 70px 200px;
+    grid-gap: 5px;
+    margin-bottom: 30px;
+}
+
+.children-one-two {
+    display: flex;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.little-text {
+    margin: 0;
+    font-size: small;
+}
+
 form select {
     margin-bottom: 14px;
     height: 40px;
+}
+
+form button {
+    height: 40px;
+    width: 200px;
 }
 
 .arrivedate {
@@ -153,6 +191,7 @@ select {
 
 .dates {
     display: flex;
+    gap: 3px;
     justify-content: space-between;
 }
 
@@ -176,6 +215,79 @@ select {
     align-items: center;
 }
 
+.article-info h2 {
+    margin-top: 0;
+    color: #0082ca;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.article-info p {
+    color: #616363;
+}
+
+.tag {
+    padding: 1px 10px;
+    margin-right: 10px;
+    background-color: white;
+    color: #44c8f5;
+    border: #44c8f5 solid 2px;
+    border-color: #44c8f5;
+    font-weight: bold;
+}
+
+.button-detail {
+    margin-top: 10px;
+    color: #00466e;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fed401;
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+}
+
+button, a{
+    cursor: pointer;
+}
+
+.button-vacations {
+    background-color: #0082ca;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    padding: 15px 50px;
+    border: none;
+    font-size: 20px;
+}
+
+.button-hotels {
+    background-color: #cce6f4;
+    color: #0082ca;
+    font-style: italic;
+    font-weight: bold;
+    padding: 15px 50px;
+    border: none;
+    font-size: 20px;
+}
+
+.sortby {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0e4564;
+}
+
+.view-hotels  button{
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #00456e;
+    border: none;
+    padding: 15px 75px;
+}
+
 .section-details a {
     width: 100%;
 }
@@ -187,6 +299,7 @@ select {
 .search-container {
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-between;
     padding: 60px 0 15px 0;
 }
