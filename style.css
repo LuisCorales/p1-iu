@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +7,7 @@
 body {
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
-    background-color: purple;
+    background-color: #fff;
 }
 
 header {
@@ -41,7 +43,12 @@ header nav ul li a {
     text-decoration: none;
 }
 
+.logo {
+    margin-top: 10px;
+}
+
 .title-bar {
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-around;
     background-color: #fff;
@@ -49,62 +56,235 @@ header nav ul li a {
 }
 
 .ribbon-square {
-    width: 200px;
-    height: 150px;
-    background-color: red;
+    content: url("assets/ribbon.png");
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    height: 160px;
+
 }
 
 .top-items {
-
     display: flex;
     gap: 30px;
+    margin-bottom: 10px;
     align-self: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    vertical-align: middle;
 }
 
 .top-items img {
-    padding-top: 40px;
-    min-height: 50px;
+    padding-top: 20px;
+    max-height: 80px;
 }
 
 main {
-    
+    position: relative;
 }
 
-/*
-.main-image {
-    position: relative;
-    width: 100%;
-    z-index: 2;
-}
-*/
 .main-image img {
     width: 100%;
 }
-/*
-.main-image::before{
-    position: absolute;
-    content: "";
-    z-index: 50;
-    background: url("waterflow.png") no-repeat !important;
-    height: 130px;
-    top: 58%;
-    width: 101.5%;
-    background-size: 100% !important;
-}
-
-*/
 
 .form-container {
-    content: url("assets/form.png");
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 400px;
+    padding: 24px;
+    background-image: url(assets/form.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.guests {
+    display: flex;
+    justify-content: space-between;
+}
+
+.guests label {
+    margin: 0;
+}
+
+.guests p {
+    margin: 0;
+}
+
+form h3 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+form p {
+    font-size: 14px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form select {
+    margin-bottom: 14px;
+    height: 40px;
+}
+
+.arrivedate {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.departdate {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+select {
+    width: 100%;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dates input {
+    width: 100%;
+    height: 40px;
+}
+
+.page-content {
+    margin: 0 auto;
+    background-color: #fff;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.section-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-details a {
+    width: 100%;
+}
+
+.section-details a img {
+    width: 100%;
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 60px 0 15px 0;
+}
+
+.buttons-bar {
+    display: flex;
+}
+
+.search-bar {
+    display: flex;
+    width: 50%;
+}
+
+.search-bar label {
+    width: 25%;
+}
+
+hr {
+    color: #44c8f5;
+    border: none;
+    background-color: #44c8f5;
+    width: 100%;
+    height: 3px;
+}
+
+.article-content {
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+}
+
+.articles {
+    width: 100%;
+}
+
+article {
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+}
+
+article img {
+    content: url("assets/postimage.png");
+}
+
+.pl {
+    padding-left: 30px;
+}
+
+.pr {
+    padding-right: 30px;
+}
+
+.view-hotels {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.ad {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons-hotels {
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+footer img {
+    margin-bottom: 70px;
+}
+
+.footer-section img {
+    width: 100%;
 }

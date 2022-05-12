@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Adventure Island - Luis Corales</title>
 </head>
+
 <body>
     <header>
         <div class="top-bar">
@@ -21,16 +23,16 @@
         </div>
 
         <div class="title-bar">
-            <img src="assets/logo.png" alt="logo">
+            <img class="logo" src="assets/logo.png" alt="logo">
 
             <div class="ribbon-square">
 
             </div>
 
             <div class="top-items">
-                <img src="a" alt="login">
-                <img src="a" alt="cart">
-                <img src="a" alt="search">
+                <a href=""><img src="assets/login.png" alt="login"></a>
+                <a href=""><img src="assets/cart.png" alt="cart"></a>
+                <a href=""><img src="assets/search.png" alt="search"></a>
             </div>
         </div>
     </header>
@@ -40,21 +42,201 @@
             <img src="assets/hero.png" alt="hero">
 
             <div class="form-container">
-                <form action="">
-                    <h2>Book Your Vacation</h2>
+                <form>
+                    <h3>Book Your Vacation</h3>
                     <p>Select your package and who's going</p>
-                    <div>
-                        <label for="">GUESTS</label>
+                    <div class="guests">
+                        <label for="guests">GUESTS</label>
                         <p>View Package Details</p>
                     </div>
-                   <select name="guests" id="guests">
-                       <option value="1">1</option>
-                       <option value="2">2</option>
-                       <option value="3">3</option>
-                   </select>
+                    
+                    <select name="guests" id="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <div class="dates">
+                        <div class="arrivedate">
+                            <label for="">ARRIVE</label>
+                            <input type="date" name="arrivedate" id="arrivedate">
+                        </div>
+                        <div class="departdate">
+                            <label for="">DEPART</label>
+                            <input type="date" name="departdate" id="departdate">
+                        </div>
+                    </div>
+                    
+                    <p>Park Hours</p>
+                    <p>3/23/16 9AM - 6PM, 3/24/16 9AM - 6PM, 3/25/16 9AM - 7PM </p>
+
+                    <div class="ages">
+                        <div class="adult-ages">
+                            <label for="adults">Adults</label>
+                            <select name="agesadult" id="agesadult">
+                                <option value="0">0</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                            </select>
+                        </div>
+                        <div class="children">
+                            <label for="adults">Children</label>
+                            <select name="agesadult" id="agesadult">
+                                <option value="0">0</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                            </select>
+                        </div>
+                        <div class="children-ages">
+                            <label for="adults">Ages of Children</label>
+                            <div class="children-one-two">
+                                <select name="child1" id="child1">
+                                    <option value="0">0</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                </select>
+                                <select name="child2" id="child2">
+                                    <option value="0">0</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Book Now</button>
                 </form>
             </div>
         </div>
     </main>
+
+    <div class="page-content">
+        <section class="section-details">
+            <a href="#"><img src="assets/section.jpg" alt="section"></a>
+            <div class="search-container">
+                <div class="button-bar">
+                    <button>Vacations</button>
+                    <button>Hotels</button>
+                </div>
+                <div class="search-bar">
+                    <label for="">Sort By</label>
+                    <select name="" id="">
+                        <option value="Food and Drink Packages">Food and Drink Packages</option>
+                    </select>
+                    <button type="submit">V</button>
+                </div>
+            </div>
+            <hr>
+        </section>
+    </div>
+
+    <div class="article-content">
+        <div class="articles">
+            <article>
+                <img src="" alt="aa" class="pr">
+                <div class="article-info">
+                    <h2>AAA</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laborum adipisci, cupiditate
+                        soluta
+                        sapiente consectetur magnam mollitia optio enim sunt autem atque. Quibusdam quas id quos
+                        consectetur
+                        nulla nam vero!</p>
+                    <div>
+                        <button>Roler Coaster</button>
+                        <button>Min Height 56"</button>
+                    </div>
+                    <button>Package Details</button>
+                </div>
+            </article>
+
+            <hr>
+
+            <article>
+                <div class="article-info">
+                    <h2>AAA</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laborum adipisci, cupiditate
+                        soluta
+                        sapiente consectetur magnam mollitia optio enim sunt autem atque. Quibusdam quas id quos
+                        consectetur
+                        nulla nam vero!</p>
+                    <div>
+                        <button>Roler Coaster</button>
+                        <button>Min Height 56"</button>
+                    </div>
+                    <button>Package Details</button>
+                </div>
+                <img src="" alt="aa" class="pl">
+            </article>
+
+            <hr>
+
+            <article>
+                <img src="" alt="aa" class="pr">
+                <div class="article-info">
+                    <h2>AAA</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laborum adipisci, cupiditate
+                        soluta
+                        sapiente consectetur magnam mollitia optio enim sunt autem atque. Quibusdam quas id quos
+                        consectetur
+                        nulla nam vero!</p>
+                    <div>
+                        <button>Roler Coaster</button>
+                        <button>Min Height 56"</button>
+                    </div>
+                    <button>Package Details</button>
+                </div>
+            </article>
+
+            <hr>
+
+            <article>
+                <div class="article-info">
+                    <h2>AAA</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laborum adipisci, cupiditate
+                        soluta
+                        sapiente consectetur magnam mollitia optio enim sunt autem atque. Quibusdam quas id quos
+                        consectetur
+                        nulla nam vero!</p>
+                    <div>
+                        <button>Roler Coaster</button>
+                        <button>Min Height 56"</button>
+                    </div>
+                    <button>Package Details</button>
+                </div>
+                <img src="" alt="aa" class="pl">
+            </article>
+
+            <hr>
+        </div>
+
+        <div class="view-hotels">
+            <button>Want More?<br>View Adventure Island Hotels</button>
+        </div>
+    
+        <div class="ad">
+            <img src="assets/ad.png" alt="ad">
+            <div class="buttons-hotels">
+                <img src="assets/buttonshotel.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <section class="footer-section">
+        <img src="assets/footersection.png" alt="section">
+    </section>
+    
+    <footer>
+        <h3>© 2017 SeaWorld Parks & Entertainment, Inc. All Rights Reserved</h3>
+        <div class="footer-nav">
+            <a href="#">Feedback</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Site Map</a>
+            <a href="#">Company Info</a>
+            <a href="#">Media Room</a>
+            <a href="#">Join Our Team</a>
+        </div>
+        <img src="assets/sponsors.png" alt="">
+    </footer>
 </body>
+
 </html>
